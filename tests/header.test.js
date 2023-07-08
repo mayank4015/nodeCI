@@ -20,7 +20,7 @@ test("clicking login starts oAuth flow", async () => {
   await page.click(".right a");
   const url = await page.url();
 
-  expect(url).toMatch(/accounts\.google\.com/);
+  expect(url).toContain("accounts.google.com");
 });
 
 test("When signed in, shows logout button", async () => {
