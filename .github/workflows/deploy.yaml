@@ -23,8 +23,7 @@ jobs:
         image: redis
 
     env:
-      NODE_ENV: ci
-      PORT: 3000
+      NODE_ENV: ci PORT: 3000
 
     steps:
       - uses: actions/checkout@v2
