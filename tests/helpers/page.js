@@ -5,7 +5,7 @@ const useFactory = require("./../factories/userFactory");
 class CustomPage {
   static async build() {
     const browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       args: ["--no-sandbox"],
     });
 
@@ -35,7 +35,7 @@ class CustomPage {
 
     await this.page.goto("http://localhost:3000/blogs");
 
-    await this.page.waitFor('a[href="/auth/logout');
+    await this.page.waitFor('a[href="/auth/logout"]');
   }
 }
 

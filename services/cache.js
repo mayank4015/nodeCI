@@ -35,7 +35,7 @@ mongoose.Query.prototype.exec = async function () {
 
   client.HSET(this.hashKey, key, JSON.stringify(result), "EX", 10);
 
-  await client.disconnect();
+  // await client.disconnect();
 
   return result;
 };

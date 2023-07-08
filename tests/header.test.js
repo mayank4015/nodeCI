@@ -19,7 +19,6 @@ test("The logo has the correct text", async () => {
 test("clicking login starts oAuth flow", async () => {
   await page.click(".right a");
   const url = await page.url();
-
   expect(url).toContain("accounts.google.com");
 });
 
