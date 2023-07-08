@@ -22,8 +22,9 @@ jobs:
       redis:
         image: redis
 
-    env:
+    env: |
       NODE_ENV: ci
+      PORT: 3000
       nodeEnvironment: "node"
 
     steps:
@@ -40,7 +41,5 @@ jobs:
         run: |
           nohup npm run start &
           sleep 3
-        env:
-          PORT: 3000
       - name: Run tests
         run: npm run test
