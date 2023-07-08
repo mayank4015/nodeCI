@@ -6,5 +6,4 @@ module.exports = {
     "mongodb+srv://mayank4015:Merci49124015@cluster0.uy5pe4z.mongodb.net/advnode?retryWrites=true&w=majority",
   cookieKey: "123123123",
   redisUrl: null,
-  SUPPRESS_JEST_WARNINGS: "1 npm test",
 };
